@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Wish</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Happy Birthday, <span id="name"></span>!</h1>
+        </header>
+
+        <div class="countdown">
+            <h2>Countdown to Your Birthday!</h2>
+            <div id="timer"></div>
+        </div>
+
+        <div class="tasks">
+            <h3>Birthday Tasks:</h3>
+            <ul>
+                <li id="blowCandle" class="task">Blow out candles</li>
+                <li id="cutCake" class="task">Cut the cake</li>
+                <li id="blastBalloon" class="task">Blast the balloons</li>
+            </ul>
+        </div>
+
+        <div class="memories">
+            <h3>Your Memories</h3>
+            <div id="imageContainer"></div>
+            <textarea id="memoryText" placeholder="Write a memory from today..."></textarea>
+        </div>
+
+        <footer>
+            <button onclick="generateBirthdayWish()">Generate Birthday Wish</button>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
